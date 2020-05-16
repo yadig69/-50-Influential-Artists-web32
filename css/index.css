@@ -93,34 +93,41 @@ body {
   line-height: 2rem;
   background-color: #1991;
 }
-.nav-bar {
-  font-size: 1.5rem;
-  font-family: 'Raleway', sans-serif;
-}
-.nav-bar .vl-1 {
-  border-left: 2px solid #585a58;
-  height: 50px;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  top: 30px;
-}
-.nav-bar .vl-2 {
-  border-left: 2px solid #585a58;
-  height: 50px;
-  position: absolute;
-  left: 53.5%;
-  margin-left: 2.5%;
-  top: 30px;
-}
-.nav-bar a {
-  margin: 20px;
-}
 header {
   width: 100%;
   padding: 2.5%;
   display: flex;
   justify-content: center;
+}
+header nav {
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+header nav .vl-1 {
+  border-left: 2px solid #585a58;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.9%;
+  top: 5%;
+}
+header nav .vl-2 {
+  border-left: 2px solid #585a58;
+  height: 40px;
+  position: absolute;
+  left: 53.5%;
+  margin-left: 1.5%;
+  top: 5%;
+}
+header nav a {
+  margin: 20px;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 110%;
 }
 .title-container {
   background-image: url(/assets/home.png);
@@ -129,22 +136,16 @@ header {
   height: 600px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
 }
 .title-container h1 {
   font-size: 200%;
   color: #ffffff;
-  margin: 20% auto 0;
+  margin-bottom: 2.5%;
 }
-.title-container .btn-container {
-  width: 60%;
-  height: 20px;
-  margin: 0 30% 30%;
-}
-.title-container .btn-container .contact-btn {
-  margin: 20%;
+.title-container .btn {
   display: flex;
   padding: 15px;
   font-size: 1.5rem;
@@ -155,22 +156,22 @@ hr {
 }
 .artists-container {
   display: flex;
-  flex-wrap: row-nowrap;
-  justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: center;
+  border: 1px solid red;
 }
 .artists-container .artist {
   width: 50%;
-  height: 300px;
+  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .artists-container .artist .bio {
   margin: 10px;
-  width: 50%;
-  height: 300px;
   padding: 60px;
-  background-color: #212718;
 }
 .artists-container .artist img {
   border-radius: 10px;
